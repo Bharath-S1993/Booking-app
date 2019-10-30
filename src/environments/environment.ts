@@ -3,7 +3,18 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  version: "v1.1.1-dev-190522T22", // // require("moment-timezone").tz("Asia/Kolkata").format("YYMMDDTHH");
+  // hostV1: "http://localhost:3000/cl/v1",
+  firebase: {
+    apiKey: "AIzaSyCiA5AFoPo67-sUxmpftcpakHh5SnhyN7w",
+    authDomain: "booking-app-da643.firebaseapp.com",
+    databaseURL: "https://booking-app-da643.firebaseio.com",
+    projectId: "booking-app-da643",
+    storageBucket: "booking-app-da643.appspot.com",
+    messagingSenderId: "724182780619",
+    appId: "1:724182780619:web:5704c334db9616b1a1a94e"
+  }
 };
 
 
