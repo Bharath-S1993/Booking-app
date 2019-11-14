@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from '../components/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
+import { environment } from 'src/environments/environment';
 declare const firebase;
 firebase.initializeApp(environment.firebase);
 @NgModule({
