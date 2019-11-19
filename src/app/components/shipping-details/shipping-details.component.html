@@ -1,0 +1,21 @@
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="" *ngFor="let ship of shippings">
+
+            </div>
+        </div>
+    </div>
+</div> -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 shipping-item" style="margin: 8px;" *ngFor="let ship of shippings | async">
+            <div class="float-left">
+                {{ship.type}}
+            </div>
+            <div class="float-right">
+                {{ship.price}}
+            </div>
+        </div>
+    </div>
+</div>

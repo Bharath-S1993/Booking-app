@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row" style="margin-top:8px">
+        <div class="col-md-12" style="border:1px solid grey">
+            <h2>
+                Product
+            </h2>
+            <div *ngFor="let item of products;index as productId">
+                <h3>
+                    <a [title]="item.details +' info'" [routerLink]="['products',productId]">{{item?.name}}</a>
+                </h3>
+                <p *ngIf="item.desc">
+                    {{item.desc}}
+                </p>
+                <button type="button" mat-stroked-button color='primary' (click)="onShare()">Share</button>
+
+                <p></p>
+                <app-product-alerts [product]="item" (notify)="onNotify()"></app-product-alerts>
+
+                <hr>
+
+            </div>
+        </div>
+    </div>
+</div>

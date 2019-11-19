@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row" style="padding: 16px;">
+        <div class="col-md-12" style="border: 1px solid blueviolet;">
+            <div *ngIf="product">
+                <h3>Product Details</h3>
+                <h3>{{product?.name}}</h3>
+                <h4>{{product?.price | currency}}</h4>
+                <p>{{product?.desc}}</p>
+                <button type="button" color='primary' style="margin-bottom: 8px;" mat-raised-button (click)="onAddToCart()">Buy</button>
+            </div>
+        </div>
+    </div>
+</div>

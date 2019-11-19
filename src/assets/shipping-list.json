@@ -1,0 +1,13 @@
+[{
+        "type": "2-day",
+        "price": "2"
+    },
+    {
+        "type": "Quick",
+        "price": "5"
+    },
+    {
+        "type": "Postal",
+        "price": "4"
+    }
+]
